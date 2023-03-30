@@ -1,0 +1,8 @@
+
+
+options(scipen = 999)
+ggplot(data = cleaned_df) +
+  aes(x = day_of_week, fill = member_casual) +
+  geom_bar(position = 'dodge') +
+  labs(x = 'Day of week', y = 'Number of rides', fill = 'Member type', title = 'Number of rides by member type')
+ggsave("number_of_rides_by_member_type.png")
