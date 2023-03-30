@@ -1,0 +1,5 @@
+plot(data = cleaned_df) +
+  aes(x = month, fill = member_casual) +
+  geom_bar(position = 'dodge') +
+  labs(x = 'Month', y = 'Number of rides', fill = 'Member type', title = 'Number of rides per month')
+ggsave("number_of_rides_per_month.png")
