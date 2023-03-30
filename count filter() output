@@ -1,0 +1,64 @@
+count(filter(cleaned_df, member_casual=='member'), start_station_name, sort = T)
+# A tibble: 837 × 2
+   start_station_name            n
+   <chr>                     <int>
+ 1 NA                       373106
+ 2 Clark St & Elm St         24739
+ 3 Wells St & Concord Ln     23716
+ 4 Kingsbury St & Kinzie St  23562
+ 5 Wells St & Elm St         21019
+ 6 Dearborn St & Erie St     19585
+ 7 Wells St & Huron St       19188
+ 8 St. Clair St & Erie St    18901
+ 9 Broadway & Barry Ave      17800
+10 Clinton St & Madison St   16913
+# … with 827 more rows
+
+count(filter(cleaned_df, member_casual=='member'), end_station_name, sort = T)
+# A tibble: 828 × 2
+   end_station_name              n
+   <chr>                     <int>
+ 1 NA                       373899
+ 2 Clark St & Elm St         24913
+ 3 Wells St & Concord Ln     24392
+ 4 Kingsbury St & Kinzie St  23645
+ 5 Wells St & Elm St         21641
+ 6 Dearborn St & Erie St     20303
+ 7 St. Clair St & Erie St    18868
+ 8 Wells St & Huron St       18827
+ 9 Broadway & Barry Ave      18493
+10 Clinton St & Madison St   17353
+# … with 818 more rows
+
+
+
+count(filter(cleaned_df, member_casual=='casual'), start_station_name, sort = T)
+# A tibble: 842 × 2
+   start_station_name             n
+   <chr>                      <int>
+ 1 NA                        317678
+ 2 Streeter Dr & Grand Ave    66353
+ 3 Millennium Park            33578
+ 4 Michigan Ave & Oak St      29778
+ 5 Shedd Aquarium             23249
+ 6 Theater on the Lake        21349
+ 7 Wells St & Concord Ln      19888
+ 8 Lake Shore Dr & Monroe St  19616
+ 9 Clark St & Lincoln Ave     17033
+10 Wells St & Elm St          16664
+# … with 832 more rows
+
+count(filter(cleaned_df, member_casual=='casual'), end_station_name, sort = T)
+# A tibble: 841 × 2
+   end_station_name                n
+   <chr>                       <int>
+ 1 NA                         364827
+ 2 Streeter Dr & Grand Ave     68673
+ 3 Millennium Park             34565
+ 4 Michigan Ave & Oak St       31192
+ 5 Theater on the Lake         22760
+ 6 Shedd Aquarium              21563
+ 7 Wells St & Concord Ln       19456
+ 8 Lake Shore Dr & Monroe St   18264
+ 9 Lake Shore Dr & North Blvd  17439
+10 Clark St & Lincoln Ave      17180
