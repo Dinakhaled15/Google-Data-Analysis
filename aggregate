@@ -1,0 +1,16 @@
+aggregate(cleaned_df$trip_duration ~ cleaned_df$member_casual + cleaned_df$day_of_week, FUN = mean)
+
+1                    casual                    Sun           2254.2573 secs
+2                    member                    Sun            939.5538 secs
+3                    casual                    Mon           1912.7473 secs
+4                    member                    Mon            794.8956 secs
+5                    casual                    Tue           1678.5293 secs
+6                    member                    Tue            767.3451 secs
+7                    casual                    Wed           1659.6644 secs
+8                    member                    Wed            769.2124 secs
+9                    casual                    Thu           1662.3466 secs
+10                   member                    Thu            766.6220 secs
+11                   casual                    Fri           1821.1061 secs
+12                   member                    Fri            799.5648 secs
+13                   casual                    Sat           2082.5980 secs
+14                   member                    Sat            915.9313 secs
